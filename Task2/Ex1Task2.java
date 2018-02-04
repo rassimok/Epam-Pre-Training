@@ -8,13 +8,6 @@ public class Ex1Task2 {
 	public static int HEADTH_PER_YEAR_300_ = 1;
 	public static int EYES_IN_ONE_HEAD = 2;
 
-	public static void main(String[] args) {
-
-		int N = 299;
-		System.out.println("nomberOfHeads: " + getNomberOfHeads(N));
-		System.out.println("nomberOfEyes: " + getNomberOfEyes(N));
-	}
-
 	public static int getNomberOfHeads(int age) {
 		if (age >= 300) {
 			return HEADTH_ON_300 + (age - 300);
