@@ -2,24 +2,24 @@ import java.util.ArrayList;
 
 public class Ex3Task2 {
 
-	public static final ArrayList<String> smilesArray = new ArrayList<String>();
+	public static final ArrayList<String> SMILES_ARRAY = new ArrayList<String>();
 	static {
-		smilesArray.add("(^_^)");
-		smilesArray.add(";’-)))");
-		smilesArray.add("(_|_)");
-		smilesArray.add(":)");
-		smilesArray.add(":DDD");
-		smilesArray.add(":(");
-		smilesArray.add(";(");
-		smilesArray.add(";)");
-		smilesArray.add("(^o^)");
-		smilesArray.add("(*-*)");
+		SMILES_ARRAY.add("(^_^)");
+		SMILES_ARRAY.add(";’-)))");
+		SMILES_ARRAY.add("(_|_)");
+		SMILES_ARRAY.add(":)");
+		SMILES_ARRAY.add(":DDD");
+		SMILES_ARRAY.add(":(");
+		SMILES_ARRAY.add(";(");
+		SMILES_ARRAY.add(";)");
+		SMILES_ARRAY.add("(^o^)");
+		SMILES_ARRAY.add("(*-*)");
 	}
 
 	
 
 	public static String getMood() {
-		return smilesArray.get((int) (Math.random() * 10));
+		return SMILES_ARRAY.get((int) (Math.random() * 10));
 	}
 
 }
