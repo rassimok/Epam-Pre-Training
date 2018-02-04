@@ -10,11 +10,11 @@ public class Dragon {
 
 	public static int getNomberOfHeads(int age) {
 		if (age >= 300) {
-			return HEADTH_ON_300 + (age - 300);
+			return HEADTH_ON_300 + HEADTH_PER_YEAR_300_*(age - 300);
 		} else if (age >= 200) {
 			return HEADTH_ON_200 + HEADTH_PER_YEAR_200_300 * (age - 200);
 		} else {
-			return (age + 1) * 3;
+			return (age + 1) * HEADTH_PER_YEAR_1_200;
 		}
 
 	}
