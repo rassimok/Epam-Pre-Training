@@ -1,23 +1,48 @@
-import java.util.ArrayList;
 
 public class MoodSensor {
 
-	public static final ArrayList<String> SMILES_ARRAY = new ArrayList<String>();
-	static {
-		SMILES_ARRAY.add("(^_^)");
-		SMILES_ARRAY.add(";’-)))");
-		SMILES_ARRAY.add("(_|_)");
-		SMILES_ARRAY.add(":)");
-		SMILES_ARRAY.add(":DDD");
-		SMILES_ARRAY.add(":(");
-		SMILES_ARRAY.add(";(");
-		SMILES_ARRAY.add(";)");
-		SMILES_ARRAY.add("(^o^)");
-		SMILES_ARRAY.add("(*-*)");
-	}
-
 	public static String getMood() {
-		return SMILES_ARRAY.get((int) (Math.random() * 10));
+		String mood;
+		switch ((int) (Math.random() * 10)) {
+		case 0:
+			mood = "(^_^)";
+			break;
+		case 1:
+			mood = ";’-)))";
+			break;
+		case 2:
+			mood = "(_|_)";
+			break;
+		case 3:
+			mood = ":)";
+			break;
+		case 4:
+			mood = ":DDD";
+			break;
+		case 5:
+			mood = ":(";
+			break;
+		case 6:
+			mood = ";(";
+			break;
+		case 7:
+			mood = ";)";
+			break;
+		case 8:
+			mood = "(^o^)";
+			break;
+		case 9:
+			mood = "(^o^)";
+			break;
+		case 10:
+			mood = "(*-*)";
+			break;
+		default:
+			mood = "!!!!!!!!!!!!";
+			break;
+		}
+
+		return mood;
 	}
 
 }
