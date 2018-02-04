@@ -1,25 +1,34 @@
 
 public class Ex1Task2 {
 
+	public static int HEADTH_ON_200 = 201 * 3;
+	public static int HEADTH_ON_300 = HEADTH_ON_200 + 100 * 2;
+	public static int HEADTH_PER_YEAR_1_200 = 3;
+	public static int HEADTH_PER_YEAR_200_300 = 2;
+	public static int HEADTH_PER_YEAR_300_ = 1;
+	public static int EYES_IN_ONE_HEAD = 2;
+
 	public static void main(String[] args) {
 
-		int N = 355;
-		int nomberOfHeads;
-		int nomberOfEyes;
+		int N = 299;
+		System.out.println("nomberOfHeads: " + getNomberOfHeads(N));
+		System.out.println("nomberOfEyes: " + getNomberOfEyes(N));
+	}
 
-		if (N >= 300) {
-			nomberOfHeads = 201 * 3 + 100 * 2 + (N - 300);
-			nomberOfEyes = nomberOfHeads * 2;
-		} else if (N >= 200) {
-			nomberOfHeads = 201 * 3 + 2 * (N - 200);
-			nomberOfEyes = nomberOfHeads * 2;
+	public static int getNomberOfHeads(int age) {
+		if (age >= 300) {
+			return HEADTH_ON_300 + (age - 300);
+		} else if (age >= 200) {
+			return HEADTH_ON_200 + HEADTH_PER_YEAR_200_300 * (age - 200);
 		} else {
-			nomberOfHeads = (N + 1) * 3;
-			nomberOfEyes = nomberOfHeads * 2;
+			return (age + 1) * 3;
 		}
 
-		System.out.println("nomberOfHeads: " + nomberOfHeads);
-		System.out.println("nomberOfEyes: " + nomberOfEyes);
+	}
+
+	public static int getNomberOfEyes(int age) {
+
+		return EYES_IN_ONE_HEAD * getNomberOfHeads(age);
 	}
 
 }
