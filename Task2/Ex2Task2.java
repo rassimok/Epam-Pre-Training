@@ -1,21 +1,9 @@
 import java.util.HashSet;
-import java.util.Scanner;
+
 
 public class Ex2Task2 {
 
-	public static void main(String[] args) {
-
-		Scanner scan = new Scanner(System.in);
-		String s = scan.nextLine();
-		scan.close();
-		char c = s.charAt(0);
-
-		System.out.println(c + " is vowel?(Version1) - " + isVowelVersion1(c));
-		System.out.println(c + " is vowel?(Version2) - " + isVowelVersion2(c));
-		System.out.println(c + " is vowel?(Version3) - " + isVowelVersion3(c));
-		System.out.println(c + " is vowel?(Version4) - " + isVowelVersion4(c));
-
-	}
+	
 
 	public static boolean isVowelVersion1(char c) {
 		c = Character.toLowerCase(c);
