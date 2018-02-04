@@ -16,9 +16,7 @@ public class Ex3Task2 {
 		smilesArray.add("(*-*)");
 	}
 
-	public static void main(String[] args) {
-		System.out.println(getMood());
-	}
+	
 
 	public static String getMood() {
 		return smilesArray.get((int) (Math.random() * 10));
