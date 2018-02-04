@@ -1,5 +1,3 @@
-import java.util.HashSet;
-
 public class Letters {
 
 	public static boolean isVowelVersion1(char c) {
@@ -27,14 +25,8 @@ public class Letters {
 	}
 
 	public static boolean isVowelVersion3(char c) {
-		HashSet<Character> vowelsHashSet = new HashSet<Character>();
-		vowelsHashSet.add('a');
-		vowelsHashSet.add('e');
-		vowelsHashSet.add('i');
-		vowelsHashSet.add('o');
-		vowelsHashSet.add('u');
-		vowelsHashSet.add('y');
-		if (vowelsHashSet.contains(Character.toLowerCase(c))) {
+		String s = "" + Character.toLowerCase(c);
+		if ("aeiouy".contains(s)) {
 			return true;
 		} else {
 			return false;
