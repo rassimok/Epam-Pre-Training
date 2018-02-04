@@ -12,7 +12,8 @@ public class Main {
 		System.out.println(c + " is vowel?(Version2) - " + Ex2Task2.isVowelVersion2(c));
 		System.out.println(c + " is vowel?(Version3) - " + Ex2Task2.isVowelVersion3(c));
 		System.out.println(c + " is vowel?(Version4) - " + Ex2Task2.isVowelVersion4(c));
-		
+		//Task 2 Exercise 3
+		System.out.println(Ex3Task2.getMood());
 		//Task 2 Exercise 4
 		System.out.println(DateByRassimok.getNextDayDate(1, 2, 1989));
 		//Task 2 Exercise 5
