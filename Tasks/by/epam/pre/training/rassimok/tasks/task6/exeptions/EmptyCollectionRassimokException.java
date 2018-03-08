@@ -1,6 +1,6 @@
 package by.epam.pre.training.rassimok.tasks.task6.exeptions;
 
-public class EmptyCollectionRassimokException extends Exception {
+public class EmptyCollectionRassimokException extends RassimokCollectionException {
 
 	public EmptyCollectionRassimokException() {
 		super();
